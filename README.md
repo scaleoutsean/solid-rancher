@@ -7,7 +7,7 @@
 
 ## vCenter Role for Rancher Management Cluster
 
-- The Rancher documentation has a list of vCenter privileges required for Rancher v2.x. Feel free to work by it or (as of v2.5.2) you can use PowerCLI to load [this CSV file](./files/rancher-vcenter-roles-v2.5.2.csv) to your vCenter.
+For manual DIY deployment, you shouldn't use the administrator account. The Rancher documentation has a list of minimum vCenter privileges required for Rancher v2.x. Feel free to work by it or (as of v2.5.2) you can use PowerCLI to load [this text file](./files/rancher-vcenter-roles-v2.5.2.txt) to your vCenter. Then you'd create a Rancher deployment account with these privileges. 
 
 ## Is this some sort of official advice from Rancher Labs or NetApp
 
