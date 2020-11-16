@@ -1,1 +1,1 @@
-Sitemap: https://scaleoutsean.github.io/solid-rancher/docs/sitemap.xml
+Sitemap: https://scaleoutsean.github.io/solid-rancher/solid-rancher/sitemap.xml
