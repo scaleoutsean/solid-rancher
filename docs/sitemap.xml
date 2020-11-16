@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://scaleoutsean.github.io/solid-rancher/docs/about/</loc>
+</url>
+<url>
+<loc>https://scaleoutsean.github.io/solid-rancher/docs/automate/</loc>
+</url>
+<url>
+<loc>https://scaleoutsean.github.io/solid-rancher/docs/deploy</loc>
+</url>
+<url>
+<loc>https://scaleoutsean.github.io/solid-rancher/docs/deploy/ez-rancher.html</loc>
+</url>
+<url>
+<loc>https://scaleoutsean.github.io/solid-rancher/docs/plan/hcc-vs-ez-rancher.html</loc>
+</url>
+<url>
+<loc>https://scaleoutsean.github.io/solid-rancher/docs/</loc>
+</url>
+<url>
+<loc>https://scaleoutsean.github.io/solid-rancher/docs/plan/network.html</loc>
+</url>
+<url>
+<loc>https://scaleoutsean.github.io/solid-rancher/docs/plan</loc>
+</url>
+<url>
+<loc>https://scaleoutsean.github.io/solid-rancher/docs/protect</loc>
+</url>
+<url>
+<loc>https://scaleoutsean.github.io/solid-rancher/docs/plan/storage.html</loc>
+</url>
+<url>
+<loc>https://scaleoutsean.github.io/solid-rancher/docs/plan/vcenter.html</loc>
+</url>
+</urlset>
