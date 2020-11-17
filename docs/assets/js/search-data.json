@@ -1,79 +1,157 @@
 {"0": {
     "doc": "About",
+    "title": "About this Site",
+    "content": "This is personal site by scaleoutSean and is not supported, endorsed or funded by anyone (except that it uses free Github resources). ",
+    "url": "https://scaleoutsean.github.io/solid-rancher/about/#about-this-site",
+    "relUrl": "/about/#about-this-site"
+  },"1": {
+    "doc": "About",
+    "title": "Is this some sort of official advice from SuSE, Rancher or NetApp",
+    "content": "No. ",
+    "url": "https://scaleoutsean.github.io/solid-rancher/about/#is-this-some-sort-of-official-advice-from-suse-rancher-or-netapp",
+    "relUrl": "/about/#is-this-some-sort-of-official-advice-from-suse-rancher-or-netapp"
+  },"2": {
+    "doc": "About",
+    "title": "License, Trademarks, Ackowledgements",
+    "content": "The content of solid-rancher repo by scaleoutSean is licensed under the Do What The F*ck You Want To Public License (see LICENSE) except where noted differently. The Solid Rancher repository image was derived from “Cowboy Hat” by Charles Rondeau, licensed under Public Domain license. The metallic (“solid metal”) appearance - perhahps not very successful - is supposed to convey the idea of solid Rancher-based K8s clusters on NetApp HCI or SolidFire clusters. The Web template was designed by Patrick Marsceill and is available under The MIT License. NetApp, ONTAP, SolidFire, SnapMirror and the marks listed at www.netapp.com/TM are trademarks of NetApp, Inc. Rancher Labs, Rancher, Kubernetes, and other brands and marks belong to their respective owners. ",
+    "url": "https://scaleoutsean.github.io/solid-rancher/about/#license-trademarks-ackowledgements",
+    "relUrl": "/about/#license-trademarks-ackowledgements"
+  },"3": {
+    "doc": "About",
     "title": "About",
-    "content": "## About this Site This is personal site by scaleoutSean and is not supported, endorsed or funded by anyone (except that it uses free Github resources). ## Is this some sort of official advice from SuSE, Rancher or NetApp No. ## License, Trademarks, Ackowledgements The content of solid-rancher repo by scaleoutSean is licensed under the Do What The F\\*ck You Want To Public License (see [LICENSE](LICENSE)) except where noted differently. The Solid Rancher repository image was derived from \"Cowboy Hat\" by Charles Rondeau, licensed under Public Domain license. The metallic (\"solid metal\") appearance - perhahps not very successful - is supposed to convey the idea of solid Rancher-based K8s clusters on NetApp HCI or SolidFire clusters. The Web template was designed by Patrick Marsceill and is available under The MIT License. NetApp, ONTAP, SolidFire, SnapMirror and the marks listed at www.netapp.com/TM are trademarks of NetApp, Inc. Rancher Labs, Rancher, Kubernetes, and other brands and marks belong to their respective owners. ",
+    "content": " ",
     "url": "https://scaleoutsean.github.io/solid-rancher/about/",
     "relUrl": "/about/"
-  },"1": {
+  },"4": {
     "doc": "Automate",
     "title": "When to consider Automation",
     "content": "If you deploy new Management or Workload clusters on a daily or weekly basis, you should probably consider how to use PowerShell, PowerCLI or Terraform to enforce consistency and eliminate human errors in deployment and destruction of such clusters. These techniques are discused in the Awesome SolidFire repo. ",
     "url": "https://scaleoutsean.github.io/solid-rancher/automate/#when-to-consider-automation",
     "relUrl": "/automate/#when-to-consider-automation"
-  },"2": {
+  },"5": {
     "doc": "Automate",
     "title": "Ansible, Powershell, Terraform",
     "content": "Considering that ez-rancher employs Terraform and there are both SolidFire (“ElementSW”) and vSphere Providers for Terraform, for this I’d prefer Terraform followed by PowerShell and only then Ansible. But you can choose any approach that works for you. If you have any of these already in place, that would obviously be a factor. You can find examples of SolidFire storage provisioning with Terraform on YouTube. Awesome SolidFire has additional details on SolidFire automation. ",
     "url": "https://scaleoutsean.github.io/solid-rancher/automate/#ansible-powershell-terraform",
     "relUrl": "/automate/#ansible-powershell-terraform"
-  },"3": {
+  },"6": {
     "doc": "Automate",
     "title": "Automate",
     "content": " ",
     "url": "https://scaleoutsean.github.io/solid-rancher/automate/",
     "relUrl": "/automate/"
-  },"4": {
+  },"7": {
     "doc": "Deploy",
     "title": "Deploy",
     "content": " ",
     "url": "https://scaleoutsean.github.io/solid-rancher/deploy",
     "relUrl": "/deploy"
-  },"5": {
+  },"8": {
+    "doc": "ez-rancher",
+    "title": "Deploy Rancher in NetApp SolidFire and eSDS Environments",
+    "content": "SolidFire and eSDS users should have mNode and HCC available in their environment, but may not be able to deploy Rancher with it. The reason is the compute nodes where Rancher Kubernetes is deployed cannot be managed by HCC, so we cannot use HCC to do this the way it’s done on NetApp HCI clusters. NetApp Trident Helm Chart for Workload Clusters . ez-rancher deploys it by default. You can also add it later. The chart can be found here. Deploy Rancher Management Cluster using ez-rancher . ez-rancher doesn’t make networking or other choices for you, so good planning is essential. ez-rancher can be downloaded here. Edit config file according to the instructions and run the tool. It takes 15-20 minutes to complete. YouTube videos of the process (edited to less than 3 minutes each): . | Deploy Management Cluster with ez-rancher: https://www.youtube.com/watch?v=m54PM9dJujE | Deploy Workload Cluster with ez-rancher: https://www.youtube.com/watch?v=2CavtI4Hdh8 | . ",
+    "url": "https://scaleoutsean.github.io/solid-rancher/deploy/ez-rancher.html#deploy-rancher-in-netapp-solidfire-and-esds-environments",
+    "relUrl": "/deploy/ez-rancher.html#deploy-rancher-in-netapp-solidfire-and-esds-environments"
+  },"9": {
     "doc": "ez-rancher",
     "title": "ez-rancher",
-    "content": "As indicated earlier, unless NetApp tells us differently, supported Management Clusters should be deployed with HCC. In this section we'll therefore look at other environments, such as NetApp SolidFire/eSDS. In the case you wonder what's the difference between a NetApp HCI environment and a non-HCI environment, in this context a short answer could be \"NetApp HCI deployed with NDE\", which also means that: - Compute nodes are NetApp HCI H-Series nodes - Compute nodes run vSphere ESXi hypervisor ## Deploy Rancher in NetApp SolidFire and eSDS Environments SolidFire and eSDS users should have mNode and HCC available in their environment, but may not be able to deploy Rancher with it. The reason is the compute nodes where Rancher Kubernetes is deployed cannot be managed by HCC, so we cannot use HCC to do this the way it's done on NetApp HCI clusters. ### Deploy Rancher using `ez-rancher` ez-rancher doesn't make any networking or other choices for you, so good planning is essential. ez-rancher can be downloaded [here](https://github.com/NetApp/ez-rancher). Edit config file according to the instructions and run the tool. It takes 15-20 minutes to complete. YouTube videos of the process (edited to less than 3 minutes each): - Deploy Management Cluster with ez-rancher: [https://www.youtube.com/watch?v=m54PM9dJujE](https://www.youtube.com/watch?v=m54PM9dJujE) - Deploy Workload Cluster with ez-rancher: [https://www.youtube.com/watch?v=2CavtI4Hdh8](https://www.youtube.com/watch?v=2CavtI4Hdh8) ",
+    "content": "As indicated earlier, unless the official documentation or NetApp support tells us differently, supported Management Clusters should be deployed with HCC. In this section we’ll therefore look at other environments, such as NetApp SolidFire/eSDS. In the case you wonder what’s the difference between a NetApp HCI environment and a non-HCI environment, in this context a short answer could be “NetApp HCI is deployed with NDE”, which also means that: . | Compute nodes are NetApp HCI H-Series nodes | Compute nodes run vSphere ESXi hypervisor | . ",
     "url": "https://scaleoutsean.github.io/solid-rancher/deploy/ez-rancher.html",
     "relUrl": "/deploy/ez-rancher.html"
-  },"6": {
+  },"10": {
+    "doc": "HCC or ez-rancher",
+    "title": "Management vs. Workload (User) Clusters",
+    "content": "We should concern ourselves only with Rancher Management Cluster(s) because Workload Clusters are deployed by Rancher Management Cluster (not HCC.) . The deployment of Workload Clusters is likely to be much less prescriptive and drive by common-sense Kubernetes-in-vSphere-VMs considerations. ",
+    "url": "https://scaleoutsean.github.io/solid-rancher/plan/hcc-vs-ez-rancher.html#management-vs-workload-user-clusters",
+    "relUrl": "/plan/hcc-vs-ez-rancher.html#management-vs-workload-user-clusters"
+  },"11": {
+    "doc": "HCC or ez-rancher",
+    "title": "Supportability",
+    "content": "For NetApp HCI administrators HCC is the recommended and (perhaps more importantly) supported approach to deploy Rancher Management Cluster on NetApp HCI. For this deployment method, please refer to the NetApp documentation for Rancher on NetApp HCI. ez-rancher can be used instead of HCC, but infrastructure-wise a Management Cluster deployed by ez-rancher should be indistinguishable from an HCC-deployed Management Cluster to ensure its supportability. NetApp HCI users could deploy Management Cluster with HCC and then replicate (not literally - we don’t want IP address or other conflicts) with ez-rancher - this should be good enough for Dev/Test Management Clusters, for example. If we document those parameters by glancing at HCC deployment logs, we can then use ez-rancher to deploy Management Cluster in a manner consistent with HCC. Of course NetApp Support would be the judge of that, so the only reliable method to get a supported production Management Clusters is to deploy it with HCC. vSphere administrators in a SolidFire environment have access to HCC, but HCC canonot be used to deploy Rancher. The reason is compute nodes where Rancher Management Cluster is deployed cannot be managed by HCC, so that task would be impossible to accomplish in the way it’s done on NetApp HCI compute nodes).SolidFire customers can therefore use ez-rancher or any method supported by Rancher (which includes manual installation of Virtual Machines). ez-rancher will be discussed in next section. ",
+    "url": "https://scaleoutsean.github.io/solid-rancher/plan/hcc-vs-ez-rancher.html#supportability",
+    "relUrl": "/plan/hcc-vs-ez-rancher.html#supportability"
+  },"12": {
     "doc": "HCC or ez-rancher",
     "title": "HCC or ez-rancher",
-    "content": "## Management vs. Workload (User) Clusters We should concern ourselves only with Management Clusters because Workload Clusters are deployed by Rancher Management Cluster, and not by HCC. ## Supportability For NetApp HCI administrators HCC is the recommended and (perhaps more importantly) *supported* approach to deploy Rancher Management Cluster on NetApp HCI. For this deployment method, please refer to the official documentation for Rancher on NetApp HCI. ez-rancher can be used instead of HCC, but the cluster should be indistinguishable from an HCC-deployed Management Cluster, otherwise supportability may be an issue. NetApp HCI users could deploy a cluster with HCC and use the same parameters in ez-rancher. If we document those parameters here we could use ez-rancher to deploy Management Cluster in a manner consistent with HCC. Of course NetApp Support would be the judge of that, so the only truly reliable choice for supported production Management Clusters is to deploy with HCC. vSphere administrators in a SolidFire environment have access to HCC, but HCC canonot be used to deploy Rancher. The reason is compute nodes where Rancher Management Cluster is deployed cannot be managed by HCC, so that task would be impossible to accomplish in the way it's done on NetApp HCI compute nodes).SolidFire customers can therefore use ez-rancher or any method supported by Rancher (which includes manual installation of Virtual Machines). ez-rancher will be discussed in next section. ",
+    "content": " ",
     "url": "https://scaleoutsean.github.io/solid-rancher/plan/hcc-vs-ez-rancher.html",
     "relUrl": "/plan/hcc-vs-ez-rancher.html"
-  },"7": {
+  },"13": {
+    "doc": "Home",
+    "title": "Solid Rancher: Notes on Rancher Kubernetes with NetApp HCI and SolidFire",
+    "content": "This site contains unofficial notes about deploying Rancher Kubernetes with NetApp HCI, SolidFire and eSDS. What’s in here . | Plan: things to consider before you Deploy | Deploy: deployment tips and considerations | Protect: protect your services and data (DR, BC, BR) | Automate: work better, faster | . External Resources . Always review the official documentation. Unofficial sites may be useful so they’re listed here as well, especially if they’re referenced more than once. | Official NetApp HCI Solution Documentation for Rancher on NetApp HCI (not yet available) | Awesome SolidFire - collection of SolidFire resources | ez-rancher - automated deployment tool for Rancher Management Clusters | Trident - NetApp Trident, dynamic storage provisioner for containers | . When in doubt, check with NetApp Support. ",
+    "url": "https://scaleoutsean.github.io/solid-rancher/#solid-rancher-notes-on-rancher-kubernetes-with-netapp-hci-and-solidfire",
+    "relUrl": "/#solid-rancher-notes-on-rancher-kubernetes-with-netapp-hci-and-solidfire"
+  },"14": {
     "doc": "Home",
     "title": "Home",
-    "content": "## Solid Rancher: Notes on Rancher Labs' Kubernetes with NetApp HCI and SolidFire ### What's in here - Plan: things to consider before you Deploy - Deploy: deployment tips - Protect: protect your services and data - Automate: work better, faster ### External Resources Always review the official documentation. Unofficial sites may be useful so they're listed here as well, especially if they're referenced more than once. When in doubt, check with NetApp Support. - [Official NetApp HCI Solution Documentation for Rancher on NetApp HCI] - [Awesome SolidFire](https://github.com/scaleoutsean/awesome-solidfire) - collection of SolidFire resources - [ez-rancher](https://github.com/NetApp/ez-rancher/) - automated deployment tool for Rancher Management Clusters ",
+    "content": " ",
     "url": "https://scaleoutsean.github.io/solid-rancher/",
     "relUrl": "/"
-  },"8": {
+  },"15": {
+    "doc": "Network",
+    "title": "Default Networks on NetApp HCI",
+    "content": "With VMware vDS . These are created by NDE during deployment and should not be touched: . | DVS_HCI_internal_mNode_Network | DVS_HCI_internal_Storage_Network | DVS_HCI_internal_vCenter_Network | DVS_HCI_vMotion | DVS_HCI_ISCSI_A | DVS_HCI_ISCSI_B | . NetApp HCI has solution designs for VMware Private Cloud and other Kubenetes distributions which contain examples of network design for Kubernetes on NetApp HCI. ",
+    "url": "https://scaleoutsean.github.io/solid-rancher/plan/network.html#default-networks-on-netapp-hci",
+    "relUrl": "/plan/network.html#default-networks-on-netapp-hci"
+  },"16": {
+    "doc": "Network",
+    "title": "Rancher Management Cluster",
+    "content": "This cluster must be able to communicate with at least the first three destinations in the list below: . | vCenter of the VMware cluster in which it is installed | NetApp HCI Management Node (HCC services) | All Rancher Workload Clusters it manages (each may have a separate Management VLAN, but they could also have common Kubernetes Cluster Management VLAN) | NetApp HCI Storage Management IP (i.e. SolidFire MVIP, if NetApp Trident is used for storage provisioning) . | Also any other storage Management IP involved (ONTAP SVM Management IP, etc.) | . | It may also need to be able to connect to a backup network, another cluster at the DR site, a gateway to connect to your Public Cloud provider, and so on | . ",
+    "url": "https://scaleoutsean.github.io/solid-rancher/plan/network.html#rancher-management-cluster",
+    "relUrl": "/plan/network.html#rancher-management-cluster"
+  },"17": {
+    "doc": "Network",
+    "title": "Rancher Workload Cluster(s)",
+    "content": "These need to be able to communicate with: . | The Rancher Management Cluster that manages it | Storage Network (Worker Nodes only, and only if these use iSCSI or NFS storage provisioned by NetApp Trident) . | NFS could be ONTAP Select running on VMware or any ONTAP appliance reachable from Worker NodesA) | iSCSI could be NetApp HCI storage, NetApp E-Series (iSCSI), ONTAP (iSCSI) | . | . Optionally these also may need to connect to other networks. ",
+    "url": "https://scaleoutsean.github.io/solid-rancher/plan/network.html#rancher-workload-clusters",
+    "relUrl": "/plan/network.html#rancher-workload-clusters"
+  },"18": {
+    "doc": "Network",
+    "title": "DNS, NTP",
+    "content": "As usual: make sure vSphere, HCC/mNode and Rancher requirements are satisfied. ",
+    "url": "https://scaleoutsean.github.io/solid-rancher/plan/network.html#dns-ntp",
+    "relUrl": "/plan/network.html#dns-ntp"
+  },"19": {
     "doc": "Network",
     "title": "Network",
-    "content": "## Management Cluster This cluster must be able to communicate with at least the first three destinations in the list below: - vCenter of the VMware cluster in which it is installed - NetApp HCI Management Node (HCC services) - All Rancher Workload Clusters it manages (each can be on a separate VLAN) - NetApp HCI Storage Management IP (i.e. SolidFire MVIP, if NetApp Trident is used for storage provisioning) - Also any other storage Management IP involved (ONTAP SVM Management IP, etc.) - It may also need to be able to connect to a backup network, another cluster at the DR site, a gateway to connect to your Public Cloud provider, and so on ## Workload Cluster(s) These need to be able to communicate with: - The Rancher Management Cluster that manages it - Storage Network (Worker Nodes only, and only if these use iSCSI or NFS storage provisioned by NetApp Trident) - NFS could be ONTAP Select running on VMware or any ONTAP appliance reachable from Worker NodesA) - iSCSI could be NetApp HCI storage, NetApp E-Series (iSCSI), ONTAP (iSCSI) ## DNS, NTP As usual: make sure vSphere, HCC/mNode and Rancher requirements are satisfied. ",
+    "content": " ",
     "url": "https://scaleoutsean.github.io/solid-rancher/plan/network.html",
     "relUrl": "/plan/network.html"
-  },"9": {
+  },"20": {
     "doc": "Plan",
     "title": "Plan",
     "content": " ",
     "url": "https://scaleoutsean.github.io/solid-rancher/plan",
     "relUrl": "/plan"
-  },"10": {
+  },"21": {
     "doc": "Protect",
     "title": "Protect",
-    "content": "### Disaster Recovery You can use SolidFire native replication (see Awesome SolidFire) to replicate Datastores and Volumes used by Rancher to a remote site. Both local and remote volumes can take scheduled snapshots. ### Business Continuity In essence BC is a combination of two procedures: - Search-and-Replace operation for Trident targets (paths) on PROD vs. DR site - Break-Reverse-Start sequence for SolidFire storage replication These aren't currently documented specifically for the Rancher on HCI solution or even in the NetApp Trident documentation, but use SolidFire, Kuberetes and Trident features and do not directly depend on Rancher itself. In theory we could use vSphere SRM and SolidFire SRA to failover VMs running Rancher, but that would be complicated approach and I doubt we'll see it officially recommended. Awesome SolidFire has examples of how Target IQNs differ between clusters. YouTube has a demo of how PowerShell can be used to pair clusters, create replication relationship between two SolidFire storage clusters. It takes 30 seconds. YouTube also has a (longish, 15 min) video with a demonstration of SolidFire storage cluster failover and failback in a K8s/Trident environment. #### BC through Kubernetes If services running on Kubernetes are designed and protected in a storage-independent approach, BC can be obtained independently of SolidFire storage. Example: a Web site backed by a NOSQL cluster with Web and Database containers spread across multiple sites running indepdent NetApp HCI or SolidFire clusters. ### Backup and Recovery Rancher provides its own \"snapshot\" feature that can backup cluster configuration to a local disk or S3 storage such as NetApp StorageGRID or Public Cloud Object Storage. For cluster configuration I would prefer that over VMware or SolidFire snapshots or backups. For cluster data, you could use application backups or a 3rd party backup software that can backup K8s containers (see Awesome SolidFire). ",
+    "content": "Disaster Recovery . You can use SolidFire native replication (see Awesome SolidFire) to replicate Datastores and Volumes used by Rancher to a remote site. Both local and remote volumes can take scheduled snapshots. Business Continuity . In essence BC is a combination of two procedures: . | Search-and-Replace operation for Trident targets (paths) on PROD vs. DR site | Stop-Reverse-Start (replication) sequence for storage replication | . These aren’t currently documented specifically for the Rancher on HCI solution or even in the NetApp Trident documentation, but use SolidFire, Kuberetes and Trident features and therefore do not directly depend on Rancher itself. In theory we could use vSphere SRM and SolidFire SRA to failover VMs running Rancher, but that would be complicated approach and I doubt we’ll see it officially recommended. Awesome SolidFire has examples of how Target IQNs differ between clusters. YouTube has a demo of how PowerShell can be used to pair clusters, create replication relationship between two SolidFire storage clusters. It takes 30 seconds. YouTube also has a (longish, 15 min) video with a demonstration of SolidFire storage cluster failover and failback in a K8s/Trident environment. BC through Kubernetes . If services running on Kubernetes are designed and protected in a storage-independent approach, BC can be obtained independently of SolidFire storage. Example: a Web site backed by a NOSQL cluster with Web and Database containers spread across multiple sites running indepdent NetApp HCI or SolidFire clusters. Backup and Recovery . Rancher provides its own “snapshot” feature that can backup cluster configuration to a local disk or S3 storage such as NetApp StorageGRID or Public Cloud Object Storage. For cluster configuration I would prefer that over VMware or SolidFire snapshots or backups. For cluster data, you could use application backups or a 3rd party backup software that can backup K8s containers (see Awesome SolidFire). ",
     "url": "https://scaleoutsean.github.io/solid-rancher/protect",
     "relUrl": "/protect"
-  },"11": {
+  },"22": {
+    "doc": "Storage",
+    "title": "Management Cluster",
+    "content": "Should you create a new datastore or use existing? . Choices: . | Use existing Datastore | Add new Datastore | Add N new Datastores, for N VMs running Kubernetes etcd/Control Plane services | . Which one is “best”? You guessed it - it depends. In all likelihood, though, a separate VMware Datastore (and therefore a new SolidFire volume) would be a good starting point. N new datastores for N VMs (Nodes) would be better for situations where a higher HA is desirable, as a failure or failover of one Datastore wouldn’t impact all etcd nodes at the same time. Multiple Management Clusters are also a possibility, so one could have the important ones deployed across multiple datastores, and less important ones on one dedicated Datastore (or even shared, although Min QoS for such volumes would have to be set with care). The one thing that doesn’t sound like a good idea at all is to put Management Cluster VMs on the same Datastore where vCenter or other non-Rancher VMs run. ez-rancher (and presumably HCC) do not assume that Management Cluster would use PVCs. Default Datastores on NetApp HCI . As of NetApp Deployment Engine 1.8P1, these two get created during HCI deployment: . | NetApp-HCI-Datastore-01 | NetApp-HCI-Datastore-02 | . Personally I’d create one or more new datastores (NetApp-HCI-Datastore-Rancher-0[1,2,3]) for the important Management Cluster. ",
+    "url": "https://scaleoutsean.github.io/solid-rancher/plan/storage.html#management-cluster",
+    "relUrl": "/plan/storage.html#management-cluster"
+  },"23": {
+    "doc": "Storage",
+    "title": "Workload Cluster(s)",
+    "content": "These could be on new Datastore, or spread across two or more, similar to Management Clusters. ez-rancher allows downstream cluster managers to deploy Trident from catalog, but they need to obtain a dedicated storage account from VI or Storage Administrator. Again, pay attention to Storage QoS settings (especially Min QoS). Personally I would suggest to evaluate (first in non-production) QoS SIOC to see if helps with intra-VM fairness when Rancher workload VMs are sharing one Datastore/Volume. ",
+    "url": "https://scaleoutsean.github.io/solid-rancher/plan/storage.html#workload-clusters",
+    "relUrl": "/plan/storage.html#workload-clusters"
+  },"24": {
     "doc": "Storage",
     "title": "Storage",
-    "content": "## Management Cluster Should you create a new datastore or use existing? Choices: - Use existing Datastore - Add new Datastore - Add N new Datastores, for N VMs running Kubernetes etcd/Control Plane services Which one is \"best\"? You guessed it - it depends. In all likelihood, though, a separate VMware Datastore (and therefore a new SolidFire volume) would be a good starting point. N new datastores for N VMs (Nodes) would be better for situations where a higher HA is desirable, as a failure or failover of one Datastore wouldn't impact all etcd nodes at the same time. Multiple Management Clusters are also a possibility, so one could have the important ones deployed across multiple datastores, and less important ones on one dedicated Datastore (or even shared, although Min QoS for such volumes would have to be set with care). The one thing that doesn't sound like a good idea at all is to put Management Cluster VMs on the same Datastore where vCenter or other non-Rancher VMs run. ### Default Datastores on NetApp HCI As of NetApp Deployment Engine 1.8P1, these two get created during HCI deployment: - NetApp-HCI-Datastore-01 - NetApp-HCI-Datastore-02 Personally I'd create one or more new datastores (NetApp-HCI-Datastore-Rancher-0[1,2,3]) for the important Management Cluster. ## Workload Cluster(s) These could be on new Datastore, or spread across two or more, similar to Management Clusters. Again, pay attention to Storage QoS settings (especially Min QoS). Personally I would suggest to evaluate (first in non-production) QoS SIOC to see if helps with intra-VM fairness when Rancher workload VMs are sharing one Datastore/Volume. ",
+    "content": " ",
     "url": "https://scaleoutsean.github.io/solid-rancher/plan/storage.html",
     "relUrl": "/plan/storage.html"
-  },"12": {
+  },"25": {
     "doc": "vCenter and Other Accounts",
     "title": "vCenter and Other Accounts",
-    "content": "### vCenter Role for Rancher Management Cluster For manual (DIY) deployments, while you can use the vCenter administrator account, it's better not to. The Rancher documentation has a list of minimum vCenter privileges required for Rancher v2.5. Feel free to work by it or (as of v2.5.2) you can use PowerCLI to load [this text file](../assets/files/rancher-v2.5.2-vcenter-6.7u3.txt) to your vCenter and save some time. If you have a newer version of Rancher or vSphere, take a look at the Rancher documentation to see if anything has changed. With the file you can use PowerCLI to create a Rancher deployment account with these privileges. See this ([example](https://documentation.commvault.com/commvault/v11_sp19/article?p=115101.htm) to get started.) ### SSO and Github Rancher supports SSO and Github integration. Kubernetes cluster managers and users may need to be able to authenticate and get authorized against related endpoints (Active Directory, etc.) ",
+    "content": "vCenter Role to Deploy Rancher Management Cluster(s) . For manual (aka DIY) deployments, while we may use a vCenter administrator account, it’s better not to. The Rancher documentation has a list of minimum vCenter privileges required for automated deployment of Rancher v2.5 ‘local’ (i.e. Management) cluster. Feel free to work by it or (as of v2.5.2) you can use PowerCLI to load this text file to your vCenter and save some time. If you have a newer version of Rancher or vSphere, take a look at the Rancher documentation to see if anything has changed. With the file you can use PowerCLI to create a Rancher deployment account with these privileges. See this (example to get started.) . SSO and Github . Rancher supports SSO and Github integration. Kubernetes cluster managers and users may need to be able to authenticate and get authorized against related endpoints (Active Directory, etc.) . ",
     "url": "https://scaleoutsean.github.io/solid-rancher/plan/vcenter.html",
     "relUrl": "/plan/vcenter.html"
   }
