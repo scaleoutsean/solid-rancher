@@ -1,4 +1,10 @@
-# Contributor Code of Conduct
+---
+layout: page
+title: Code of Conduct
+permalink: /CODE_OF_CONDUCT.md
+---
+
+## Contributor Code of Conduct
 
 This project adheres to No Code of Conduct.  We accept anyone's contributions.  Nothing else matters.
 
